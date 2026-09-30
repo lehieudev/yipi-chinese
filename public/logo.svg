@@ -1,0 +1,424 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Cat Fur Solid & Gradient -->
+    <radialGradient id="catFur" cx="50%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#FF881E" />
+      <stop offset="75%" stop-color="#FA7405" />
+      <stop offset="100%" stop-color="#E65D00" />
+    </radialGradient>
+
+    <!-- Inner Ear Peach -->
+    <linearGradient id="innerEar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE7CE" />
+      <stop offset="100%" stop-color="#FDCAA2" />
+    </linearGradient>
+
+    <!-- Emerald Eyes Gradient -->
+    <radialGradient id="emeraldEye" cx="45%" cy="45%" r="52%">
+      <stop offset="0%" stop-color="#67E658" />
+      <stop offset="60%" stop-color="#3BBF49" />
+      <stop offset="100%" stop-color="#249630" />
+    </radialGradient>
+
+    <!-- Book Cover Gradient: Deep Cinnabar / Crimson Red -->
+    <linearGradient id="bookCoverGrad" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#B22C28" />
+      <stop offset="60%" stop-color="#962220" />
+      <stop offset="100%" stop-color="#731415" />
+    </linearGradient>
+
+    <!-- Book Spine Gradient -->
+    <linearGradient id="spineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#691214" />
+      <stop offset="50%" stop-color="#962220" />
+      <stop offset="100%" stop-color="#5E1012" />
+    </linearGradient>
+
+    <!-- Page Spread Gradient -->
+    <linearGradient id="pageGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#FFFDF9" />
+      <stop offset="100%" stop-color="#EFE7D8" />
+    </linearGradient>
+
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#801F00" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <g filter="url(#softGlow)">
+    <!-- ========================================================= -->
+    <!-- 1. TOP-RIGHT CLOUD (Behind right ear and cheek)           -->
+    <!-- ========================================================= -->
+    <g id="cloud-top-right">
+      <!-- Main Cloud Silhouette -->
+      <path
+        d="M 335,162 
+           C 330,140 344,124 366,124 
+           C 372,110 392,100 412,106 
+           C 426,96 448,98 458,112 
+           C 474,116 486,132 482,150 
+           C 490,162 484,178 470,186 
+           C 476,198 466,212 450,214 
+           C 436,216 422,210 416,200 
+           C 404,208 388,206 378,198 
+           C 362,204 346,196 342,180 
+           C 336,176 334,170 335,162 Z"
+        fill="#FFFFFF"
+        stroke="#9E3C00"
+        stroke-width="5.5"
+        stroke-linejoin="round"
+      />
+      <!-- Cloud Swirl Spirals (Traditional Xiangyun) -->
+      <!-- Spiral 1: Top right outer -->
+      <path
+        d="M 444,128 
+           A 18 18 0 0 1 462,146 
+           A 12 12 0 0 1 448,158 
+           A 7.5 7.5 0 0 1 438,146 
+           A 4 4 0 0 1 445,140"
+        fill="none"
+        stroke="#9E3C00"
+        stroke-width="4.5"
+        stroke-linecap="round"
+      />
+      <!-- Spiral 2: Center puff -->
+      <path
+        d="M 395,125 
+           A 20 20 0 0 1 418,148 
+           A 13 13 0 0 1 400,162 
+           A 8 8 0 0 1 388,148 
+           A 4 4 0 0 1 396,141"
+        fill="none"
+        stroke="#9E3C00"
+        stroke-width="4.5"
+        stroke-linecap="round"
+      />
+      <!-- Spiral 3: Lower tail -->
+      <path
+        d="M 432,185 
+           A 14 14 0 0 1 448,198 
+           A 9 9 0 0 1 438,207 
+           A 5 5 0 0 1 430,198"
+        fill="none"
+        stroke="#9E3C00"
+        stroke-width="4"
+        stroke-linecap="round"
+      />
+    </g>
+
+    <!-- ========================================================= -->
+    <!-- 2. CAT HEAD & EARS                                        -->
+    <!-- ========================================================= -->
+    <!-- Left Ear -->
+    <g id="cat-ear-left">
+      <path
+        d="M 148,158 L 184,82 C 187,76 195,76 199,82 L 235,134 Z"
+        fill="url(#catFur)"
+        stroke="#9E3C00"
+        stroke-width="7"
+        stroke-linejoin="round"
+      />
+      <!-- Inner Left Ear Peach -->
+      <path
+        d="M 160,150 L 188,98 C 190,94 194,94 196,98 L 222,134 Z"
+        fill="url(#innerEar)"
+      />
+    </g>
+
+    <!-- Right Ear -->
+    <g id="cat-ear-right">
+      <path
+        d="M 364,158 L 328,82 C 325,76 317,76 313,82 L 277,134 Z"
+        fill="url(#catFur)"
+        stroke="#9E3C00"
+        stroke-width="7"
+        stroke-linejoin="round"
+      />
+      <!-- Inner Right Ear Peach -->
+      <path
+        d="M 352,150 L 324,98 C 322,94 318,94 316,98 L 290,134 Z"
+        fill="url(#innerEar)"
+      />
+    </g>
+
+    <!-- Cat Main Head (Rounded, Chubby Cheeks) -->
+    <path
+      d="M 142,168 
+         C 120,202 120,256 142,286 
+         C 162,312 202,326 256,326 
+         C 310,326 350,312 370,286 
+         C 392,256 392,202 370,168 
+         C 345,132 305,124 256,124 
+         C 207,124 167,132 142,168 Z"
+      fill="url(#catFur)"
+      stroke="#9E3C00"
+      stroke-width="7"
+      stroke-linejoin="round"
+    />
+
+    <!-- Whiskers (Crisp White) -->
+    <!-- Left Whiskers -->
+    <path d="M 132,212 Q 152,214 170,211" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" />
+    <path d="M 134,228 Q 153,230 172,225" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- Right Whiskers -->
+    <path d="M 380,212 Q 360,214 342,211" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" />
+    <path d="M 378,228 Q 359,230 340,225" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- Nose & Mouth -->
+    <!-- Nose -->
+    <ellipse cx="256" cy="210" rx="7.5" ry="5" fill="#883300" />
+    <!-- Smile (Cute Curved Cat Smile) -->
+    <path
+      d="M 241,221 Q 248,230 256,222 Q 264,230 271,221"
+      stroke="#883300"
+      stroke-width="4.5"
+      stroke-linecap="round"
+      fill="none"
+    />
+
+    <!-- ========================================================= -->
+    <!-- 3. CAT EYES (Emerald Green with Sparkles & Cat-Eye Wing)  -->
+    <!-- ========================================================= -->
+    <!-- Left Eye -->
+    <g id="left-eye">
+      <!-- Cat-Eye Winged Eyeliner -->
+      <path
+        d="M 166,180 C 188,162 222,172 232,185 C 235,189 233,192 226,190 C 205,182 176,178 166,192 C 163,195 160,188 166,180 Z"
+        fill="#1C0E07"
+      />
+      <!-- Eye Sclera (White) -->
+      <ellipse cx="204" cy="201" rx="30" ry="34" fill="#FFFFFF" />
+      <!-- Iris (Emerald Green) -->
+      <ellipse cx="204" cy="201" rx="26" ry="30" fill="url(#emeraldEye)" stroke="#1F852A" stroke-width="2.5" />
+      <!-- Central 4-point Sparkle Star -->
+      <g transform="translate(204, 201)">
+        <path
+          d="M 0,-15 Q 0,0 -15,0 Q 0,0 0,15 Q 0,0 15,0 Q 0,0 0,-15 Z"
+          fill="#FFFFFF"
+        />
+        <circle cx="0" cy="0" r="3.5" fill="#E8FFF0" />
+      </g>
+    </g>
+
+    <!-- Right Eye -->
+    <g id="right-eye">
+      <!-- Cat-Eye Winged Eyeliner -->
+      <path
+        d="M 346,180 C 324,162 290,172 280,185 C 277,189 279,192 286,190 C 307,182 336,178 346,192 C 349,195 352,188 346,180 Z"
+        fill="#1C0E07"
+      />
+      <!-- Eye Sclera (White) -->
+      <ellipse cx="308" cy="201" rx="30" ry="34" fill="#FFFFFF" />
+      <!-- Iris (Emerald Green) -->
+      <ellipse cx="308" cy="201" rx="26" ry="30" fill="url(#emeraldEye)" stroke="#1F852A" stroke-width="2.5" />
+      <!-- Central 4-point Sparkle Star -->
+      <g transform="translate(308, 201)">
+        <path
+          d="M 0,-15 Q 0,0 -15,0 Q 0,0 0,15 Q 0,0 15,0 Q 0,0 0,-15 Z"
+          fill="#FFFFFF"
+        />
+        <circle cx="0" cy="0" r="3.5" fill="#E8FFF0" />
+      </g>
+    </g>
+
+    <!-- ========================================================= -->
+    <!-- 4. OPEN CHINESE BOOK ("汉语")                              -->
+    <!-- ========================================================= -->
+    <!-- Book Pages (Open Spread Fan) -->
+    <g id="book-pages">
+      <!-- Curved Page Fan Silhouette -->
+      <path
+        d="M 140,244 
+           C 185,226 235,246 256,264 
+           C 277,246 327,226 372,244 
+           L 374,270 
+           C 327,250 277,270 256,288 
+           C 235,270 185,250 138,270 Z"
+        fill="url(#pageGrad)"
+        stroke="#841F21"
+        stroke-width="4.5"
+        stroke-linejoin="round"
+      />
+      <!-- Subtle Paper Page Depth Lines -->
+      <path d="M 148,252 C 185,236 226,252 248,268" stroke="#D1C4AF" stroke-width="2" fill="none" />
+      <path d="M 364,252 C 327,236 286,252 264,268" stroke="#D1C4AF" stroke-width="2" fill="none" />
+    </g>
+
+    <!-- Book Covers (Deep Cinnabar / Crimson Hardcover) -->
+    <!-- Left Cover -->
+    <path
+      d="M 126,252 
+         C 176,234 234,254 254,278 
+         L 254,390 
+         C 234,364 176,342 126,364 Z"
+      fill="url(#bookCoverGrad)"
+      stroke="#5A1214"
+      stroke-width="6"
+      stroke-linejoin="round"
+    />
+
+    <!-- Right Cover (With Title "汉语") -->
+    <path
+      d="M 386,252 
+         C 336,234 278,254 258,278 
+         L 258,390 
+         C 278,364 336,342 386,364 Z"
+      fill="url(#bookCoverGrad)"
+      stroke="#5A1214"
+      stroke-width="6"
+      stroke-linejoin="round"
+    />
+
+    <!-- Book Center Spine Joint -->
+    <path
+      d="M 256,278 L 256,390"
+      stroke="#450C0E"
+      stroke-width="5"
+      stroke-linecap="round"
+    />
+    <!-- Spine binding accents -->
+    <path d="M 250,305 L 262,305" stroke="#450C0E" stroke-width="3.5" />
+    <path d="M 250,362 L 262,362" stroke="#450C0E" stroke-width="3.5" />
+
+    <!-- CHINESE CHARACTERS ON RIGHT COVER: "汉语" (Hànyǔ) -->
+    <!-- Precisely drawn calligraphic glyphs in crisp white -->
+    <g id="chinese-text-hanyu" fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+      <!-- ================= Character: 汉 ================= -->
+      <g id="char-han" transform="translate(324, 282)">
+        <!-- 氵 (Three water dots) -->
+        <!-- Dot 1 (top) -->
+        <path d="M -16,4 C -14,2 -11,4 -10,7 C -10,10 -13,12 -15,10 Z" stroke-width="1.5" />
+        <!-- Dot 2 (middle) -->
+        <path d="M -17,17 C -15,15 -12,17 -11,20 C -11,23 -14,24 -16,22 Z" stroke-width="1.5" />
+        <!-- Flick 3 (bottom upward flick) -->
+        <path d="M -18,33 C -17,35 -14,35 -12,32 C -9,27 -7,22 -6,18" stroke-width="3.5" fill="none" />
+
+        <!-- 又 (Right Component) -->
+        <!-- Horizontal to left-slanted flick (横撇) -->
+        <path d="M -5,9 L 14,9 C 17,9 18,11 17,14 L 3,36" stroke-width="4.5" fill="none" />
+        <!-- Right-falling stroke (捺) -->
+        <path d="M -1,15 C 3,21 9,28 18,35 C 20,36 21,37 23,37" stroke-width="4.5" fill="none" />
+      </g>
+
+      <!-- ================= Character: 语 ================= -->
+      <g id="char-yu" transform="translate(324, 328)">
+        <!-- 讠 (Speech radical) -->
+        <!-- Top Dot -->
+        <path d="M -15,4 C -13,2 -10,4 -9,7 C -9,10 -12,12 -14,10 Z" stroke-width="1.5" />
+        <!-- Horizontal turn & upward flick (横折提) -->
+        <path d="M -17,15 L -8,15 C -6,15 -6,17 -7,19 L -10,32 L -6,28" stroke-width="3.5" fill="none" />
+
+        <!-- 吾 (Right component) -->
+        <!-- Top: 五 -->
+        <!-- Top horizontal bar -->
+        <path d="M -2,7 L 18,7" stroke-width="3.5" fill="none" />
+        <!-- Vertical slanted stroke -->
+        <path d="M 6,7 L 3,19" stroke-width="3.5" fill="none" />
+        <!-- Horizontal-fold stroke (折) -->
+        <path d="M 2,13 L 13,13 L 12,20" stroke-width="3" fill="none" />
+        <!-- Bottom horizontal bar of 五 -->
+        <path d="M -4,20 L 20,20" stroke-width="3.5" fill="none" />
+
+        <!-- Bottom: 口 (Mouth) -->
+        <rect x="0" y="24" width="16" height="13" rx="1.5" stroke-width="3.5" fill="none" />
+      </g>
+    </g>
+
+    <!-- ========================================================= -->
+    <!-- 5. CAT PAWS HOLDING BOOK                                  -->
+    <!-- ========================================================= -->
+    <!-- Left Paw -->
+    <ellipse
+      cx="140"
+      cy="305"
+      rx="19"
+      ry="22"
+      fill="url(#catFur)"
+      stroke="#9E3C00"
+      stroke-width="5"
+    />
+    <!-- Right Paw -->
+    <ellipse
+      cx="372"
+      cy="305"
+      rx="19"
+      ry="22"
+      fill="url(#catFur)"
+      stroke="#9E3C00"
+      stroke-width="5"
+    />
+
+    <!-- ========================================================= -->
+    <!-- 6. BOTTOM-LEFT CLOUD (Under left paw & book)              -->
+    <!-- ========================================================= -->
+    <g id="cloud-bottom-left">
+      <!-- Cloud Main Silhouette with Swirl Tail -->
+      <path
+        d="M 32,370 
+           C 42,374 54,374 65,368 
+           C 78,358 84,342 98,336 
+           C 112,328 132,326 146,334 
+           C 160,326 182,328 194,340 
+           C 210,336 230,342 240,356 
+           C 255,360 268,374 266,390 
+           C 264,406 248,418 230,418 
+           C 214,418 200,410 190,402 
+           C 176,412 154,414 138,406 
+           C 120,416 96,414 82,402 
+           C 66,408 48,404 36,392 
+           C 26,382 24,374 32,370 Z"
+        fill="#FFFFFF"
+        stroke="#9E3C00"
+        stroke-width="5.5"
+        stroke-linejoin="round"
+      />
+      <!-- Cloud Spirals / Xiangyun Swirls -->
+      <!-- Left Swirl -->
+      <path
+        d="M 64,372 
+           A 18 18 0 0 1 84,390 
+           A 12 12 0 0 1 70,404 
+           A 7.5 7.5 0 0 1 58,392 
+           A 4 4 0 0 1 66,385"
+        fill="none"
+        stroke="#9E3C00"
+        stroke-width="4.5"
+        stroke-linecap="round"
+      />
+      <!-- Middle Swirl -->
+      <path
+        d="M 124,348 
+           A 20 20 0 0 1 146,370 
+           A 13 13 0 0 1 128,385 
+           A 8 8 0 0 1 116,370 
+           A 4 4 0 0 1 124,363"
+        fill="none"
+        stroke="#9E3C00"
+        stroke-width="4.5"
+        stroke-linecap="round"
+      />
+      <!-- Right Swirl -->
+      <path
+        d="M 186,356 
+           A 18 18 0 0 1 206,376 
+           A 11.5 11.5 0 0 1 192,390 
+           A 7 7 0 0 1 180,378 
+           A 3.5 3.5 0 0 1 187,372"
+        fill="none"
+        stroke="#9E3C00"
+        stroke-width="4.5"
+        stroke-linecap="round"
+      />
+      <!-- Extended bottom tail ribbon -->
+      <path
+        d="M 32,370 C 44,360 62,358 74,366"
+        fill="none"
+        stroke="#9E3C00"
+        stroke-width="4"
+        stroke-linecap="round"
+      />
+    </g>
+  </g>
+</svg>

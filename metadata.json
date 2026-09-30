@@ -1,0 +1,6 @@
+{
+  "name": "Yipi Chinese - Học Tiếng Trung Tự Nhiên",
+  "description": "Nền tảng học tiếng Trung Yipi Chinese theo phong cách Modern Neo-Chinese với đồ họa mây đa tầng và hiệu ứng chuyển động GSAP mượt mà.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

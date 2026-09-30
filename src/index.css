@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #C45827;
+    color: #FFFFFF;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background-color: #682315;
+    color: #FFFFFF;
+  }
+}
+
+/* Typography Utility Classes */
+.font-serif {
+  font-family: 'Playfair Display', 'Noto Serif SC', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-oriental {
+  font-family: 'Noto Serif', 'Noto Serif SC', serif;
+}
+
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Keyframe for Staggered Entrance (0.8s cubic-bezier(0.16, 1, 0.3, 1)) */
+@keyframes staggerEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-stagger {
+  opacity: 0;
+  animation: staggerEntrance 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Floating animation for Mascot (translateY ±10px over 4s infinite ease-in-out) */
+@keyframes floatYipi {
+  0%, 100% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.animate-float {
+  animation: floatYipi 4s ease-in-out infinite;
+}
+
+@keyframes sweepLight {
+  0% { transform: translateX(-100%) skewX(-15deg); }
+  50%, 100% { transform: translateX(100%) skewX(-15deg); }
+}
+
+@keyframes loadProgress {
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+
+.animate-sweep {
+  animation: sweepLight 2s infinite ease-in-out;
+}
+
+.animate-progress-line {
+  animation: loadProgress 1.5s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+@keyframes scrollWheel {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(8px); opacity: 0; }
+}
+
+.animate-scroll-wheel {
+  animation: scrollWheel 1.5s infinite ease-out;
+}
+
